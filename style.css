@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar style */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(18, 18, 62);
+    flex-wrap: wrap;
+}
+
+nav .left {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/* about style */
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.first-section > div {
+    flex: 1;
+    min-width: 280px;
+}
+
+.left-section {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.right-section img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.second-section {
+    padding: 20px;
+}
+
+.second-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline #9c97f1;
+}
+
+.about-me {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.second-section .about-1 {
+    display: block;
+    margin: 15px auto;
+    font-size: 1rem;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* skills style */
+.skills {
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: underline #9c97f1;
+}
+
+.tagline {
+    text-align: center;
+    font-size: 14px;
+    color: grey;
+    margin-top: 5px;
+}
+
+.skill-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.skill-card {
+    background: #3f3e3e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.skill-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.skill-title i {
+    font-size: 22px;
+    margin-right: 10px;
+    color: rgb(170, 107, 228);
+}
+
+.progress-bar {
+    height: 12px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgb(170, 107, 228), rgb(0, 0, 33));
+    width: 0;
+    animation: load 2s forwards;
+}
+
+/* footer style */
+.footer-main {
+    width: 100%;
+    background-color: rgb(5, 5, 24);
+    border-top: 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-main div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.brand-title p {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.quick-link h2,
+.contack-details h2,
+.social-media h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.quick-link ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-link ul li,
+.social-media ul li {
+    margin: 8px 0;
+}
+
+.quick-link a,
+.contack-details a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.quick-link a:hover {
+    color: rgb(153, 153, 226);
+    transition: 0.3s;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media i {
+    font-size: 28px;
+}
+
+.pink { color: rgb(167, 37, 59); }
+.blue { color: blue; }
+.red { color: red; }
+
+.developer-info {
+    background-color: rgb(5, 5, 24);
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/* ========================= */
+/* 📱 Responsive Breakpoints */
+/* ========================= */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .left-section {
+        font-size: 1.6rem;
+    }
+
+    .second-section .about-1 {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .left {
+        font-size: 1.4rem;
+    }
+
+    .left-section {
+        font-size: 1.3rem;
+    }
+
+    .brand-title p {
+        font-size: 1.5rem;
+    }
+
+    .quick-link h2,
+    .contack-details h2,
+    .social-media h2 {
+        font-size: 18px;
+    }
+
+    .quick-link a {
+        font-size: 14px;
+    }
+
+    .social-media i {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 320px) {
+    .left-section {
+        font-size: 1.1rem;
+    }
+
+    .about-me {
+        font-size: 1.1rem;
+    }
+
+    .second-section .about-1 {
+        font-size: 0.85rem;
+    }
+
+    .brand-title p {
+        font-size: 1.2rem;
+    }
+}
